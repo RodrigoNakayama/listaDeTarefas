@@ -1,0 +1,61 @@
+hmtl {
+    font-size: 10px;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+.Lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #A4C2A5;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 45rem;
+    height: 20rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 12rem;
+    border-radius: 1rem;
+    box-shadow: rgb(88, 88, 88) 2px 2px 2px;
+}
+
+.tituloLista {
+    font-size: 4rem;
+}
+
+input {
+    font-size: 1.8rem;
+    padding: 12px;
+    margin: auto;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.botaoAdd {
+    background-color: #8fb163;
+}
+
+.corEscrita {
+    color: #4A4A48;
+}
+
+.formLista {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px;
+    text-align: center;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.itensLista {
+    font-size: 1.8rem;
+    background-color: #566246;
+}
