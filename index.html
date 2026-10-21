@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listona</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <title>Gerenciador de tarefas</title>
+    <link rel="stylesheet" href="/productionToDo-list/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-    <div>
-        <div class="Lista">
-            <h1 class="tituloLista">Lista de Tarefas</h1>
-            <div class="formLista">
+    <div class="todo-list">
+        <div class="cima">
+            <h1>To-do List</h1>
+            <div>
                 <form action="#">
-                    <input type="text" class="corEscrita" placeholder="Novo item">
-                    <input type="submit" value="Adicionar item" class="botaoAdd">
+                    <input type="text" class="corEscrita" name="text" placeholder="New Item">
+                    <input class="button-addItem" type="submit" value="Add-item">
                 </form>
-            </div>   
+            </div>    
         </div>
-        <div class="itensLista">
-            <ul>
-                <li>Arrumar a home</li>
+        <div class="listaDeElementos">
+            <ul id="todo-list">
+                <li class="item">
+                        <button class="button-check" action="checkButton">
+                            <i class="fas fa-check displayNone" action="checkButton"></i>
+                        </button>
+                        <p class="task-name">Example</p>
+                        <i class="fas fa-edit" action="editButton"></i>
+                        <i class="fas fa-trash-alt" action="deleteButton"></i>
+                </li>        
             </ul>
         </div>
     </div>

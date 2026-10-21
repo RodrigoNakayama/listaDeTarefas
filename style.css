@@ -1,61 +1,72 @@
-hmtl {
-    font-size: 10px;
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+    letter-spacing: inherit;
 }
 
-form {
-    display: flex;
-    gap: 15px;
+html {font-size: 10px;}
+
+body {
+    font-family: 'Courier New';
+    display:flex;
 }
 
-.Lista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    background-color: #A4C2A5;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 45rem;
-    height: 20rem;
-    padding: 2rem;
-    margin: auto;
-    margin-top: 12rem;
-    border-radius: 1rem;
-    box-shadow: rgb(88, 88, 88) 2px 2px 2px;
+html, body {
+    height: 100%;
 }
 
-.tituloLista {
-    font-size: 4rem;
-}
-
-input {
-    font-size: 1.8rem;
-    padding: 12px;
-    margin: auto;
-    border-radius: 0.5rem;
-    text-align: center;
-}
-
-.botaoAdd {
-    background-color: #8fb163;
-}
-
-.corEscrita {
-    color: #4A4A48;
-}
-
-.formLista {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 12px;
-    text-align: center;
-}
 
 ul, li {
     list-style-type: none;
 }
 
-.itensLista {
+
+h1 {
+    font-size: 5em;
+}
+
+input {
+    padding: 1.2rem;
     font-size: 1.8rem;
-    background-color: #566246;
+}
+
+input[type="submit"] {
+    margin: auto;
+    border-radius: 0.5rem;
+    padding: 1.2rem 3rem;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #bd9e68;
+}
+
+.todo-list{
+   background-color:rgb(247, 247, 247);
+   border-radius: 3px;
+   box-shadow: 2px 2px 15px rgba(77, 77, 77, .5);
+   min-width:37.5rem;
+   margin: auto;  
+}
+
+.cima{
+    background-color:#726a95;
+    padding: 3rem 2rem;
+    border-radius: 3px 3px 0 0;
+}
+
+.button-addItem {
+    background-color: #8C754C;
+    color: #272424;
+}
+
+.corEscrita {
+    color: #666565;
+}
+
+.listaDeElementos {
+    background-color: whitesmoke;
+    font-size: 1.8rem;
 }
